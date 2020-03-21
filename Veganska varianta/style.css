@@ -37,3 +37,137 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+/* obrazky na pozadi */
+.salaty{
+  background-image: url("images/salat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.svacina{
+  background-image: url("images/chlebicek.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mexicka{
+  background-image: url("images/tacos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.lusteniny{
+  background-image: url("images/cizrna.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.burgery{
+  background-image: url("images/burger.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*------------------------*/
+/* nastaveni pro spodni boxy */
+.kategorie{
+  position: relative;
+  min-height: 90px;
+  border: 1px solid white;
+}
+.tip{
+  position:absolute;
+  top:0;
+  left:10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.komenty{
+  position:absolute;
+  top:0;
+  right:10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.nazev{
+  position:absolute;
+  bottom:0;
+  left:10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+/* zbytek nastaveni pro hlavni box */
+.hlavni{
+  min-height: 200px;
+}
+.hlavni h1{
+  font-size: 28px;
+}
+/*-----------------------------*/
+/* tablety: */
+@media (min-width: 480px) {
+  .menu{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .kategorie{
+    width: calc(100% / 2);
+    min-height: 150px;
+  }
+  .hlavni{
+    width: 100%;
+    min-height: 250px;
+  }
+  .tip{
+    left:20px;
+  }
+  .komenty{
+    right:20px;
+  }
+  .nazev{
+    left:20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+  }
+  .hlavni h1{
+    font-size: 36px;
+  }
+}
+/*----------------------*/
+/* notebook/pc: */
+@media (min-width: 860px) {
+  .menu{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+  }
+  .kategorie{
+     width: calc(100% / 3); 
+     min-height: 200px;
+  }
+  .hlavni{
+     align-self: stretch;
+     min-height: 400px; 
+  }
+  .nazev{
+    left:20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+  }
+  .hlavni h1{
+    font-size: 48px;
+  }
+  .tip{
+    left:20px;
+  }
+  .komenty{
+    right:20px;
+  }
+}
