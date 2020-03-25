@@ -37,43 +37,38 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
-
 .menu{
   display: flex;
   flex-direction: column;
   color: white;
 }
+
 /* obrazky na pozadi */
 .salaty{
-  background-image: url("images/salat.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/salat.jpg);
 }
 .svacina{
-  background-image: url("images/chlebicek.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/chlebicek.jpg);
 }
 .mexicka{
-  background-image: url("images/tacos.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/tacos.jpg);
 }
 .lusteniny{
-  background-image: url("images/cizrna.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/cizrna.jpg);
 }
 .burgery{
-  background-image: url("images/burger.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/burger.jpg);
+}
+.salaty,
+.svacina,
+.mexicka,
+.lusteniny,
+.burgery {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 /*------------------------*/
 /* nastaveni pro spodni boxy */
 .kategorie{
